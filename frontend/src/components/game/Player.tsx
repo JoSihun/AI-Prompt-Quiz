@@ -41,7 +41,7 @@ const GamePlayer = ({ userInfo, gameChat }: GamePlayerProps) => {
         </svg>
       </div>
       <div className="pl-1 w-full flex items-center">
-        <div className="flex justify-center relative rounded-full bg-cover w-8 h-8 aspect-square -z-10" style = {{ backgroundImage: `url(${userInfo.picture})` }}>
+        <div className="flex justify-center relative rounded-full bg-cover min-w-8 min-h-8 aspect-square -z-10" style = {{ backgroundImage: `url(${userInfo.picture})` }}>
           {userInfo.isHost && (
             <div className="absolute bg-[url(/public/ui/host.png)] bg-cover w-6 h-6 -translate-y-4 -z-20"></div>
           )}
